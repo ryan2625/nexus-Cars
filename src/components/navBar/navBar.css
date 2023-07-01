@@ -1,9 +1,14 @@
-.nav-Adjust{
+#nav-Adjust{
     margin-right: 20px !important;
 }
 
 #brandPicture{
-    width: 50px;
+    width: 90px;
     height: auto;
     max-width: 100%;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
 }
