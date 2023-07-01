@@ -3,7 +3,7 @@ import NavBar from './components/navBar/NavBar';
 import Home from './components/masterPage/Home';
 import React from 'react';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
