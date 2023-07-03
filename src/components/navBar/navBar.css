@@ -29,6 +29,7 @@
 #flex-Ender{
     justify-content: space-between !important;
 }
+
 #brandPicture{
     width: 90px;
     height: auto;
@@ -40,7 +41,39 @@ img{
     max-height: 100%;
 }
 
-@media (max-width: 768px) {
+.underLine{
+    position: relative;
+    margin-right: 1rem;
+}
+
+.underLine:after{
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.4s;
+}
+
+.underLine:hover:after{
+    width:100%;
+    transition: 0.4s;
+}
+
+#searchBar{
+    outline: 2px solid rgba(0, 0, 0, 0.196);
+    margin-right: 3rem;
+}
+
+@media (max-width: 850px) {
+    #searchBar{
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 992px) {
     #nav-Adjust{
         width: 100%;
         height: calc(100vh - 54px) ;
@@ -50,18 +83,42 @@ img{
         flex-direction: column;
         align-items: center;
         z-index: 5;
+        background-color: white;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .underLine:hover:after{
+        width:0px;
     }
 
     #nav-Adjust > *{
+        color: rgba(0, 0, 0, 0.767);
         font-size: larger;
-        margin: 1rem;
+        padding: 1rem;
         width: 100%;
         text-align: center;
-        z-index: 10;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.196);
+        font-family: 'nobel-regular', sans-serif;
+        letter-spacing: 1px;
     }
 
     #nav-Adjust:nth-child(1){
-        margin-top: 8px;
-        
+        margin-top: 10px;
+    }
+
+    #searchBar{
+        outline: none;
+        margin-right: none;
+    }
+
+    #searchBar > *{
+        outline: 2px solid rgba(0, 0, 0, 0.196);
+        margin-right: none;
+    }
+
+    .afterNav:hover{
+        background-color: rgba(0, 0, 0, 0.196);
+        transition: all .3s ease-in-out;
     }
   }
