@@ -9,7 +9,7 @@ function NavBar() {
 
   return (
     <Navbar  collapseOnSelect expand="md" bg="light" data-bs-theme="light">
-    <Container>
+    <Container className='navBar1'>
       <Navbar.Brand href="#home"><BoltIcon/><img src={logoCar} alt="" id="brandPicture"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse  className="adjust-Responsive-Nav" id="responsive-navbar-nav">
