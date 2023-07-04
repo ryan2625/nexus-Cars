@@ -1,9 +1,9 @@
 import React from 'react'
-import carCaro from '../firstScrollBanner/carCaro'
+import CarCaro from '../firstScrollBanner/carCaro'
 import './Home.css'
 function Home() {
   return (<div className='homePage'>
-   <carCaro />
+   <CarCaro />
    </div>
   )
 }

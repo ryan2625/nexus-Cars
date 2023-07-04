@@ -1,13 +1,27 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import car1 from "./car1.png"
+import car2 from "./car2.png"
+import car2a from "./car2a.png"
+import car1a from "./car1a.png"
+import { useState, useEffect } from 'react'
 
-export default function carCaro() {
+export default function CarCaro() {
+
+  useEffect(() => {
+    const logSize = () => {
+    console.log(window.innerWidth)
+    }
+    window.addEventListener("resize", logSize);
+
+  }, [window.innerWidth]);
+
     return (
         <Carousel>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
+              src={car1a}
               alt="First slide"
             />
             <Carousel.Caption>
@@ -18,27 +32,13 @@ export default function carCaro() {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
+              src={car2}
               alt="Second slide"
             />
     
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            />
-    
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
