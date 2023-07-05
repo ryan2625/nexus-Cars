@@ -121,7 +121,7 @@
 }
 
 
-@media (min-width: 1170px) {
+@media (min-width: 1300px) {
     .carousel-caption > h3{
         transform: scale(2);
         animation: text 2.2s 1;
