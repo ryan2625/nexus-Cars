@@ -31,7 +31,7 @@ export default function CarCaro() {
   }, [window.innerWidth]);
 
     return (
-        <Carousel>
+        <Carousel interval={5000} slide={5000}>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -39,8 +39,8 @@ export default function CarCaro() {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>THE ALL-NEW GX</h3>
+              <p>EMBRACE INNOVATION IN MOTION.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -51,8 +51,8 @@ export default function CarCaro() {
             />
     
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3>THE FIRST-EVER TX</h3>
+              <p>THREE ROWS. ZERO COMPROMISE.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

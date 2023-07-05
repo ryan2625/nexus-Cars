@@ -1,6 +1,6 @@
 .carousel .carousel-control-prev{
     color: white;
-    background-color: rgba(0, 0, 0, 0.405);
+    background-color: rgba(0, 0, 0, 0.713);
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -12,7 +12,7 @@
 
 .carousel .carousel-control-next{
     color: white;
-    background-color: rgba(0, 0, 0, 0.405);
+    background-color: rgba(0, 0, 0, 0.713);
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -25,11 +25,77 @@
 .carousel-caption{
     position: absolute;
     color: white;
-    transition: all 0.75s ease 0s;
-    opacity: 1;
-    transform: translateY(0px);
+    letter-spacing: 10px;
+    font-size:x-large;
     top: 0px
 }
+
+.carousel-caption > h3{
+    animation: text 1.5s 1;
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: inline-block;
+    font-size:xx-large;
+    
+}
+
+
+.carousel-caption > h3::after{
+    color: rgb(255, 255, 255);
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    background: rgb(255, 255, 255);
+    left: 0px;
+    width: 100%;
+}
+
+
+.carousel-caption > p {
+    animation: text2 2.3s 1;
+    color: rgb(252, 252, 252);
+    letter-spacing: 7px;
+}
+
+
+@keyframes text2 {
+    0%{
+        
+     opacity: 0%;
+     transform: translateY(-30px);
+    }
+
+    50%{
+        opacity: 0%;
+        transform: translateY(-20px);
+    }
+
+    80%{
+        opacity: 100%;
+    }
+
+    100%{
+        transform: translateY(-1px);
+       
+    }
+}
+
+@keyframes text {
+    0%{
+     opacity: 0;
+    }
+    30%{
+      letter-spacing: 15px;
+      opacity: 0;
+    }
+    100%{
+        opacity: 1;
+      letter-spacing: 10px;
+      
+    }
+}
+
 
 @media (max-width:  768px) {
     .carousel .carousel-control-prev{
