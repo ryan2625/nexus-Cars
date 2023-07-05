@@ -119,3 +119,18 @@
         right: 15px;
     }
 }
+
+
+@media (min-width: 1170px) {
+    .carousel-caption > h3{
+        transform: scale(2);
+        animation: text 2.2s 1;
+    }
+
+    .carousel-caption > p{
+        font-size: 40px;
+        margin-top: 2rem;
+        animation: text2 3s 1;
+    }
+
+  }

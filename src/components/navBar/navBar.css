@@ -8,6 +8,11 @@
     flex-direction: row;
 }
 
+.navbar{
+    height: 95px;
+    background-color: #EFEFEF;  
+}
+
 .navBar1::after{
     content: "";
     position: absolute;
@@ -115,5 +120,11 @@ img{
     .afterNav:hover{
         background-color: rgba(0, 0, 0, 0.196);
         transition: all .3s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    .navbar{
+        height: 70px;
     }
   }

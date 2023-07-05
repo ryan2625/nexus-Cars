@@ -1,0 +1,44 @@
+.banner1Intro{
+    display: block;
+    text-align: center;
+    margin-top: 5rem !important;
+    font-size: 48px;
+    width: 100%;
+    letter-spacing: 5px;
+}
+
+.homePage{
+    background-color: #efefef
+}
+
+.rowBanner1{
+    background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(148,148,148,1) 74%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.rowBanner1 > img{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#imageBanner1{
+    width: 33%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#imageBanner2{
+    width: 33%;
+    height: auto;
+    border-radius: 30px;
+}
+
+#imageBanner3{
+    width: 33%;
+    height: auto;
+    border-radius: 30px;
+}
