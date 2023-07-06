@@ -9,21 +9,23 @@ import sideView from './sideView.png';
 
 
 function Banner1() {
-  return (<div className="Container container1" >
+  return (<div className="Container fluid container1" >
     <div className="Row rowBanner1">
         <div className="Col-12 banner1Intro">
             SHOPPING TOOLS
         </div>
-        <div className="Col-12">
-            <img src={carWheel1} alt="" id="imageBanner1"/>
         </div>
-        <div className="Col-12">
+            <div className="gridSystemBanner">
+                <div className="gridSystemBanner1">
+            <img src={carWheel1} alt="" id="imageBanner1"/> 
+            </div>
+            <div className="gridSystemBanner2">
             <img src={leatherInterior} alt="" id="imageBanner2"/>
-        </div>
-        <div className="Col-12">
+            </div>
+            <div className="gridSystemBanner3">
             <img src={sideView} alt="" id="imageBanner3"/>
-        </div>
-    </div>
+            </div>
+            </div>
   </div>
   )
 }

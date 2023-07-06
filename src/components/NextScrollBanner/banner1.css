@@ -11,7 +11,7 @@
     background-color: #efefef
 }
 
-.rowBanner1{
+.container1{
     background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(148,148,148,1) 74%);
 }
 
@@ -26,19 +26,54 @@
 }
 
 #imageBanner1{
-    width: 33%;
+    min-width: calc(400px + 1.5rem);
+    min-height: calc(400px + 1.5rem);
+    max-width: calc(600px + 1.5rem);
+    max-height: calc(600px + 1.5rem);
+    width: auto;
     height: auto;
     border-radius: 30px;
 }
 
 #imageBanner2{
-    width: 33%;
+    min-width: calc(400px + 1.5rem);
+    min-height: calc(400px + 1.5rem);
+    max-width: calc(600px + 1.5rem);
+    max-height: calc(600px + 1.5rem);
+    width: auto;
     height: auto;
     border-radius: 30px;
 }
 
+
 #imageBanner3{
-    width: 33%;
+    min-width: calc(400px + 1.5rem);
+    min-height: calc(400px + 1.5rem);
+    max-width: calc(500px + 1.5rem);
+    max-height: calc(500px + 1.5rem);
+    width: auto;
     height: auto;
     border-radius: 30px;
+}
+
+.gridSystemBanner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 1rem;
+    margin-top: 5rem;
+}
+
+.gridSystemBanner1{
+    grid-column: 2 / 5;
+}
+
+.gridSystemBanner2{
+    grid-row: 2;
+    grid-column: 3/4;
+    
+}
+
+.gridSystemBanner3{
+    grid-column:  / 7;
 }

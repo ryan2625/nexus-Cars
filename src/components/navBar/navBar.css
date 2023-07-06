@@ -44,6 +44,7 @@ img{
 .underLine{
     position: relative;
     margin-right: 1rem;
+    color: black !important;
 }
 
 .underLine:after{
@@ -128,3 +129,5 @@ img{
         height: 70px;
     }
   }
+
+  
