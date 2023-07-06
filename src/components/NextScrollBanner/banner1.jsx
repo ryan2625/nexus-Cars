@@ -16,18 +16,22 @@ function Banner1() {
         </div>
         </div>
             <div className="gridSystemBanner">
-                <div className="gridSystemBanner1">
-            <img src={carWheel1} alt="" id="imageBanner1"/> 
-            </div>
-            <div className="gridSystemBanner2">
-            <img src={leatherInterior} alt="" id="imageBanner2"/>
-            </div>
-            <div className="gridSystemBanner3">
-            <img src={sideView} alt="" id="imageBanner3"/>
+            <div className="gridSystemBanner1">
+                <div className="relativePictures">
+                    <div className="relativePicture1 picturesHover">
+                        <img src={carWheel1} alt="" id="imageBanner1"/> 
+                    </div>
+                    <div className="relativePicture2 picturesHover">
+                    <img src={leatherInterior} alt="" id="imageBanner2"/>
+                    </div>
+                    <div className="relativePicture3 picturesHover">
+                    <img src={sideView} alt="" id="imageBanner3"/>
+                    </div>
+                </div>
             </div>
             </div>
   </div>
   )
-}
+}            
 
 export default Banner1

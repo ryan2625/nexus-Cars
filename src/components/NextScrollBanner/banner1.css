@@ -13,6 +13,7 @@
 
 .container1{
     background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(148,148,148,1) 74%);
+    height: fit-content;
 }
 
 *{
@@ -26,20 +27,20 @@
 }
 
 #imageBanner1{
-    min-width: calc(400px + 1.5rem);
-    min-height: calc(400px + 1.5rem);
-    max-width: calc(600px + 1.5rem);
-    max-height: calc(600px + 1.5rem);
+    min-width: calc(325px + 1.5rem);
+    min-height: calc(325px + 1.5rem);
+    max-width: calc(325px + 1.5rem);
+    max-height: calc(325px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
 }
 
 #imageBanner2{
-    min-width: calc(400px + 1.5rem);
-    min-height: calc(400px + 1.5rem);
-    max-width: calc(600px + 1.5rem);
-    max-height: calc(600px + 1.5rem);
+    min-width: calc(325px + 1.5rem);
+    min-height: calc(325px + 1.5rem);
+    max-width: calc(325px + 1.5rem);
+    max-height: calc(325px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
@@ -47,33 +48,75 @@
 
 
 #imageBanner3{
-    min-width: calc(400px + 1.5rem);
-    min-height: calc(400px + 1.5rem);
-    max-width: calc(500px + 1.5rem);
-    max-height: calc(500px + 1.5rem);
+    max-width: calc(325px + 1.5rem);
+    max-height: calc(325px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
 }
 
 .gridSystemBanner{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 100px);
-    grid-gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 20rem;
 }
 
 .gridSystemBanner1{
-    grid-column: 2 / 5;
+    display: flex;
+    justify-content: center;
+    height: 600px;
 }
 
-.gridSystemBanner2{
-    grid-row: 2;
-    grid-column: 3/4;
-    
+.relativePictures{
+    display: flex;
+    min-width: calc(325px + 1.5rem);
+    min-height: calc(325px + 1.5rem);
+    max-width: calc(325px + 1.5rem);
+    max-height: calc(325px + 1.5rem);
+    width: auto;
+    height: auto;
+    position: relative;
 }
 
-.gridSystemBanner3{
-    grid-column:  / 7;
+.relativePicture1{
+    position: absolute;
+    right: 225px;
+    bottom: 75px;
+}
+
+.relativePicture2{
+    position: absolute;
+    top: 100px;
+}
+
+.relativePicture3{
+    position: absolute;
+    bottom: 155px;
+    left: 50px;
+}
+
+.picturesHover:hover{
+    transition: transform .5s ease-in-out, filter .5s ease-out,  box-shadow 0s ease-in-out;
+    z-index: 9999;
+    transform: scale(1.1);
+    box-shadow: 0 0 0 2px #afafaf;
+    filter: brightness(40%);
+}
+
+.picturesHover:hover .description{
+    display: block;
+}
+
+.picturesHover{
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15), 0 12px 28px rgba(0, 0, 0, 0.1);
+    transition: transform .5s ease-in-out, box-shadow 0s ease-in-out;
+}
+
+.relativePicture1::before{
+    color: #efefef;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    filter: brightness(160%);
+    content: "BUILD YOUR CAR";
+    z-index: 1000;
 }
