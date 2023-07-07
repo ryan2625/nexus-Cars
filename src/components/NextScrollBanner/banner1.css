@@ -192,5 +192,15 @@
     display: flex;
     justify-content: center;
     height: 900px;
-    margin-top: 20rem;
+    margin-top: 10rem;
+}
+
+.carText1{
+    display: none;
+}
+
+.animateText{
+    display: block;
+    transform: rotate(90deg);
+    transition: all 1s ease-in;
 }

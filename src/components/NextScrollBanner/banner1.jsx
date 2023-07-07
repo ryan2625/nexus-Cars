@@ -12,9 +12,12 @@ import { useInView } from 'react-intersection-observer';
 
 function Banner1() {
 
-const { ref: myRef, inView: myElementIsVisible} = useInView();
+    
 
-const { ref: banner1Title, inView: banner1Visible} = useInView();
+const { ref: descriptionCar, inView: myElementIsVisible} = useInView({
+    rootMargin: '-300px 0px'
+});
+
     
 
 
@@ -31,12 +34,14 @@ useEffect(() => {
 
   return (<div className="Container fluid container1" >
     <div className="Row rowBanner1">
-        <div ref={banner1Title}className="Col-12 banner1Intro">
+        <div  className="Col-12 banner1Intro">
             SHOPPING TOOLS
         </div>
         </div>
             <div className="gridSystemBanner">
-                <h1 className="hello" ref={myRef}>{myElementIsVisible ? "asd" : "ASDASD"}</h1>
+                <div className={myElementIsVisible ? "noneDisplay " + "animateText" : "noneDisplay "} ref={descriptionCar}>
+                    REVOLUTIONARY. 
+                </div>
             <div className="gridSystemBanner1">
                 <div className="relativePictures">
                     <div className="relativePicture1 picturesHover">
