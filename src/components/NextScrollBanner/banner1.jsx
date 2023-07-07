@@ -6,16 +6,37 @@ import Col from 'react-bootstrap/Col';
 import carWheel1 from './carWheel1.png';
 import leatherInterior from './leatherInterior.png';
 import sideView from './sideView.png';
+import { useRef, useEffect, useState} from 'react';
+import { useInView } from 'react-intersection-observer';
 
 
 function Banner1() {
+
+const { ref: myRef, inView: myElementIsVisible} = useInView();
+
+const { ref: banner1Title, inView: banner1Visible} = useInView();
+    
+
+
+{/*const myRef = useRef()
+const [myElementIsVisible, setMyElementIsVisible] = useState()
+console.log('myElementIsVisible', myElementIsVisible)
+useEffect(() => {
+    const observer = new IntersectionObserver((entries) =>{
+        const entry = entries[0]
+        setMyElementIsVisible(entry.isIntersecting)
+    })
+    observer.observe(myRef.current)
+},[]) */}
+
   return (<div className="Container fluid container1" >
     <div className="Row rowBanner1">
-        <div className="Col-12 banner1Intro">
+        <div ref={banner1Title}className="Col-12 banner1Intro">
             SHOPPING TOOLS
         </div>
         </div>
             <div className="gridSystemBanner">
+                <h1 className="hello" ref={myRef}>{myElementIsVisible ? "asd" : "ASDASD"}</h1>
             <div className="gridSystemBanner1">
                 <div className="relativePictures">
                     <div className="relativePicture1 picturesHover">

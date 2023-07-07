@@ -98,7 +98,7 @@
     z-index: 9999;
     transform: scale(1.1);
     box-shadow: 0 0 0 2px #afafaf;
-    filter: brightness(40%);
+    filter: saturate(0.01);
 }
 
 .picturesHover:hover .description{
@@ -106,17 +106,91 @@
 }
 
 .picturesHover{
-    padding: 1.5rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 8px 20px rgba(0, 0, 0, 0.15), 0 12px 28px rgba(0, 0, 0, 0.1);
     transition: transform .5s ease-in-out, box-shadow 0s ease-in-out;
 }
 
 .relativePicture1::before{
-    color: #efefef;
+    color: #efefef00;
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    filter: brightness(160%);
     content: "BUILD YOUR CAR";
     z-index: 1000;
+    filter: brightness(3360%);
+    letter-spacing: 13px;
+    white-space: nowrap;
+    transition: all .5s ease-in-out;
+}
+
+
+.relativePicture1:hover::before{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.708);
+    border-radius: 10px;
+    padding: .4rem;
+    transition: all .5s ease-in-out;
+}
+
+.relativePicture2::before{
+    color: #efefef00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "SPECIAL OFFERS";
+    z-index: 1000;
+    filter: brightness(3360%);
+    letter-spacing: 13px;
+    white-space: nowrap;
+    transition: all .5s ease-in-out;
+}
+
+.relativePicture2:hover::before{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.708);
+    border-radius: 10px;
+    padding: .4rem;
+    transition: all .5s ease-in-out;
+}
+
+.relativePicture3::before{
+    color: #efefef00;
+    letter-spacing: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    content: "VIEW INVENTORY";
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+    
+}
+
+.relativePicture3:hover::before{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.708);
+    border-radius: 10px;
+    padding: .4rem;
+    transition: all .5s ease-in-out;
+}
+
+.gridSystemBanner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridSystemBanner1{
+    grid-column: 2;
+}
+
+.gridSystemBanner1{
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    margin-top: 20rem;
 }
