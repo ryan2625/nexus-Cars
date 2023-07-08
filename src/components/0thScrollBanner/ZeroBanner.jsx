@@ -9,12 +9,14 @@ import { useInView } from 'react-intersection-observer';
 function ZeroBanner() {
 
     const { ref: currentOffers, inView: offersVisible} = useInView({
-        rootMargin: '-300px 0px'
+        rootMargin: '-170px 0px'
     });
 
   return (<>
-    <div className="title0">
-        <h2 className={offersVisible ? "models " + "offersAnimation" : "models"} ref={currentOffers}>VEHICLES AND CURRENT OFFERS</h2>
+    <div className={offersVisible ? "noneDisplay  " + "offersAnimation" : "noneDisplay " + "offersAnimation2"} ref={currentOffers}>
+        <h2>
+            VEHICLES AND CURRENT OFFERS
+            </h2>
     </div>
     <div className="ZVehicles">
         <div className="v1 carPics">

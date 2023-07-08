@@ -1,9 +1,3 @@
-.title0{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
 
 .models{
     letter-spacing: 3px;
@@ -54,5 +48,55 @@
 }
 
 .models{
-    display: ;
+    display: none;
+    height: 46px;
+    animation: textFall 1s forwards;
+    animation-timing-function: ease-out;
 }
+
+.offersAnimation{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromLeft .75s forwards;
+    animation-timing-function: ease-out;
+    white-space: nowrap;
+}
+
+.offersAnimation2{
+    animation: slideFromMiddleToRight .75s forwards;
+    animation-timing-function: ease-out;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideFromMiddleToRight {
+    0% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+  }
+  
+  
+ .noneDisplay{
+     opacity: 0;
+     margin: 2rem;
+     margin-bottom: calc(2rem - 20px)
+ }

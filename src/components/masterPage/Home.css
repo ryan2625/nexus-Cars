@@ -6,3 +6,11 @@
     flex-direction: column;
     height: fit-content;
 }
+
+.liner{
+    border-bottom: 3px solid #5656563d;
+    border-radius: 20px;
+    width: 75%;
+    align-self: center;
+    margin: 3rem;
+}

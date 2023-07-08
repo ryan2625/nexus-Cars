@@ -7,6 +7,7 @@ function Home() {
   return (<div className='homePage'>
    <CarCaro />
    <ZeroBanner />
+   <div className="liner"></div>
    <Banner1 />
    </div>
   )
