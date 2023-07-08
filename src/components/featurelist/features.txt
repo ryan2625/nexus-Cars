@@ -1,0 +1,9 @@
+Features to Implement...
+
+0th banner:
+
+ Multiple Car Cards, Price, Model, pictures
+  
+Hover effects
+
+Shopping tools asd

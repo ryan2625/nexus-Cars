@@ -7,5 +7,52 @@
 
 .models{
     letter-spacing: 3px;
-    
+    margin-bottom: 3rem;
+}
+
+.ZVehicles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+
+.carPics{
+    margin: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.carPics > h3, p{
+    margin: 1.5rem;
+    margin-top: calc(1rem);
+}
+
+.covering{
+    background-color: #EFEFEF;
+    z-index: 99;
+    display: block;
+    height: 45px;
+    width: calc(100%);
+    order: 0;
+}
+
+.picHov{
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.picHov:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-out;
+}
+
+.carPics > img{
+    transition: all 0.5s ease-out;
+}
+
+.models{
+    display: ;
 }
