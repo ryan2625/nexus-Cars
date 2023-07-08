@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    overflow-x: hidden;
 }
 
 .liner{
@@ -13,4 +14,10 @@
     width: 75%;
     align-self: center;
     margin: 3rem;
+    margin-top: 3.75rem;
+}
+
+.buttonSpacer{
+    height: 50px;
+    z-index: 90;
 }

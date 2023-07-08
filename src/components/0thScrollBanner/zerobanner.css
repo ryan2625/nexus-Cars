@@ -8,21 +8,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    overflow-x: hidden;
 }
 
 .carPics{
-    margin: 1rem;
-    overflow: hidden;
+    margin: .5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    flex-basis: 33%;
+    overflow: hidden;
+    
 }
 
 .carPics > h3, p{
     margin: 1.5rem;
     margin-top: calc(1rem);
 }
+
+.carPics > p{
+    margin-bottom: 4rem;
+}
+
 
 .covering{
     background-color: #EFEFEF;
@@ -45,6 +52,10 @@
 
 .carPics > img{
     transition: all 0.5s ease-out;
+}
+
+.carPics > h3{
+    white-space: nowrap;
 }
 
 .models{
@@ -98,5 +109,26 @@
  .noneDisplay{
      opacity: 0;
      margin: 2rem;
-     margin-bottom: calc(2rem - 20px)
+     margin-bottom: calc(2rem - 20px);
+ }
+
+ .offersButtons{
+    position: absolute;
+    bottom: 0px;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 3px;
+    white-space: nowrap;
+    padding: .5rem;
+    transition: all 0.6s ease;
+ }
+
+ .offersButtons:hover{
+    transition: all 0.6s ease;
+    color: white;
+    background-color: black;
+    border-color: white;
+    padding: .75rem;
+    letter-spacing: 4px;
  }
