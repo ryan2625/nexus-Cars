@@ -69,13 +69,53 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
-    animation: slideInFromLeft .75s forwards;
+    animation: slideInFromLeft 1s forwards;
     animation-timing-function: ease-out;
     white-space: nowrap;
 }
 
+.offersAnimation > h2{
+    position: relative;
+}
+
+.offersAnimation > h2::after{
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -2px;
+    width: calc(var(--h2-width) + 10%);
+    background-color: black;
+    height:2px;
+    animation: slideInFromLeftUnderline2 1s forwards;
+}
+
+.offersAnimation2 > h2::after{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-55.5%);
+    width: calc(var(--h2-width) + 3%);
+    background-color: black;
+    height:2px;
+    animation: slideFromMiddleToRightUnderline 1.25s forwards;
+}
+
+@keyframes slideFromMiddleToRightUnderline {
+    0%{
+        transform: translateX(-50.5%);
+        opacity: 1;
+      }
+
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+
 .offersAnimation2{
-    animation: slideFromMiddleToRight .75s forwards;
+    animation: slideFromMiddleToRight 1s forwards;
     animation-timing-function: ease-out;
     display: flex !important;
     justify-content: center;
@@ -94,6 +134,17 @@
     }
   }
 
+  @keyframes slideInFromLeftUnderline2 {
+    0%{
+        transform: translateX(50%);
+        opacity: 0;
+      }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
   @keyframes slideFromMiddleToRight {
     0% {
       transform: translateX(0%);
@@ -104,7 +155,8 @@
       opacity: 0;
     }
   }
-  
+
+
   
  .noneDisplay{
      opacity: 0;
@@ -132,3 +184,4 @@
     padding: .75rem;
     letter-spacing: 4px;
  }
+
