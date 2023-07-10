@@ -15,7 +15,7 @@ function Banner1() {
     
 
     const { ref: shoppingTools, inView: toolsVisible} = useInView({
-        rootMargin: '-100px 0px 0px -523px'
+        rootMargin: '-75px 0px'
     });
     
 
@@ -57,6 +57,7 @@ useEffect(() => {
                 </div>
             </div>
             </div>
+            <div className="liner"></div>
   </div>
   )
 }            
