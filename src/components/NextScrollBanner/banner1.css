@@ -46,8 +46,8 @@
     max-height: calc(200px + 1.5rem);
     width: auto;
     height: auto;
-
 }
+
 
 .gridSystemBanner{
     margin-top: 10rem;
@@ -71,6 +71,8 @@
     margin-top: 3rem;
 }
 
+
+
 .relativePicture1{
     position: absolute;
     right: 230px;
@@ -87,6 +89,68 @@
     top: 110px;
 }
 
+.toolsPic3{
+    animation: fallAnimationTools2 2s ease-out forwards;
+}    
+@keyframes fallAnimationTools2 {
+    0% {
+        opacity: 0;
+        transform: translate(230px, 230px);
+    }
+
+    30%{
+        transform: translate(190px, 190px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+.toolsPic{
+    animation: fallAnimationTools 2s ease-out forwards;
+}
+
+@keyframes fallAnimationTools {
+    0% {
+        opacity: 0;
+        transform: translate(-110px, -110px);
+    }
+
+    30%{
+        transform: translate(-90px, -90px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+
+
+@keyframes fallAnimationTools {
+    0% {
+        transform: translate(-110px, -110px);
+    }
+
+    30%{
+        transform: translate(-90px, -90px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+
+
+.picturesHover{
+    padding: .3rem;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform .5s ease-in-out, box-shadow 0s ease-in-out;
+}
+
+
+
 .picturesHover:hover{
     transition: transform .5s ease-in-out, filter .5s ease-out,  box-shadow 0s ease-in-out;
     z-index: 9999;
@@ -100,11 +164,7 @@
     display: block;
 }
 
-.picturesHover{
-    padding: .3rem;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
-    transition: transform .5s ease-in-out, box-shadow 0s ease-in-out;
-}
+
 
 .relativePicture1::before{
     color: #efefef00;
@@ -185,7 +245,7 @@
 .gridSystemBanner1{
     display: flex;
     justify-content: center;
-    height: 900px;
+    height: 800px;
 }
 
 .carText1{
@@ -252,4 +312,24 @@
     width: 100%;
     display: flex;
     position: relative;
+}
+
+.parrallax{
+    width: 100%;
+    min-width: 100%;
+    height: 600px;
+    background-image: url("banner3.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.placeHolder{
+    height: 900px;
+}
+
+.opacity{
+    opacity: 0;
 }

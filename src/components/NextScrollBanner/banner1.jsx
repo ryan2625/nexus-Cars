@@ -8,6 +8,7 @@ import imageTool2 from "./imageTools2.png"
 import imageTool3 from "./imageTools3.png"
 import { useRef, useEffect, useState} from 'react';
 import { useInView } from 'react-intersection-observer';
+import banner3 from "./banner3.png"
 
 
 function Banner1() {
@@ -16,6 +17,10 @@ function Banner1() {
 
     const { ref: shoppingTools, inView: toolsVisible} = useInView({
         rootMargin: '-75px 0px'
+    });
+
+    const { ref: toolsPic, inView: toolPicVisible} = useInView({
+        rootMargin: '-175px 0px'
     });
     
 
@@ -44,18 +49,24 @@ useEffect(() => {
                     REVOLUTIONARY. 
                 </div>
             <div className="gridSystemBanner1">
-                <div className="relativePictures">
-                    <div className="relativePicture1 picturesHover">
+                <div className="relativePictures" ref={toolsPic}>
+                    <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3" : "opacity"}>
                         <img src={imageTool1} alt="" id="imageBanner1"/> 
                     </div>
                     <div className="relativePicture2 picturesHover">
-                    <img src={imageTool2} alt="" id="imageBanner2"/>
+                        <img src={imageTool2} alt="" id="imageBanner2"/>
                     </div>
-                    <div className="relativePicture3 picturesHover">
-                    <img src={imageTool3} alt="" id="imageBanner3"/>
+                    <div className={toolPicVisible ? "relativePicture3 picturesHover toolsPic" : "opacity"}>
+                        <img src={imageTool3} alt="" id="imageBanner3" ref={toolsPic} />
                     </div>
                 </div>
             </div>
+            </div>
+            <div className="parrallax">
+                
+            </div>
+            <div className="placeHolder">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nemo doloribus, ullam ea voluptates neque, ducimus natus nisi ratione sequi, earum reiciendis obcaecati quos. Numquam ipsa velit provident accusamus aliquid.
             </div>
             <div className="liner"></div>
   </div>
