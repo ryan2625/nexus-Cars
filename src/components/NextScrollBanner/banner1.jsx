@@ -14,10 +14,9 @@ function Banner1() {
 
     
 
-const { ref: descriptionCar, inView: myElementIsVisible} = useInView({
-    rootMargin: '-300px 0px'
-});
-
+    const { ref: shoppingTools, inView: toolsVisible} = useInView({
+        rootMargin: '-250px 0px'
+    });
     
 
 
@@ -34,12 +33,14 @@ useEffect(() => {
 
   return (<div className="Container fluid container1" >
     <div className="Row rowBanner1">
-        <div  className="Col-12 banner1Intro">
-            SHOPPING TOOLS
+    <div className="animationContainer" ref={shoppingTools}>
+        <div  className={ toolsVisible ? "noneDisplay2 toolsAnimation" : "noneDisplay2 toolsAnimation2"}>
+                SHOPPING TOOLS
+            </div>
         </div>
         </div>
             <div className="gridSystemBanner">
-                <div className={myElementIsVisible ? "noneDisplay " + "animateText" : "noneDisplay "} ref={descriptionCar}>
+                <div className="">
                     REVOLUTIONARY. 
                 </div>
             <div className="gridSystemBanner1">
