@@ -20,20 +20,20 @@
 }
 
 #imageBanner1{
-    min-width: calc(325px + 1.5rem);
-    min-height: calc(325px + 1.5rem);
-    max-width: calc(325px + 1.5rem);
-    max-height: calc(325px + 1.5rem);
+    min-width: calc(200px + 1.5rem);
+    min-height: calc(200px + 1.5rem);
+    max-width: calc(200px + 1.5rem);
+    max-height: calc(200px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
 }
 
 #imageBanner2{
-    min-width: calc(325px + 1.5rem);
-    min-height: calc(325px + 1.5rem);
-    max-width: calc(325px + 1.5rem);
-    max-height: calc(325px + 1.5rem);
+    min-width: calc(200px + 1.5rem);
+    min-height: calc(200px + 1.5rem);
+    max-width: calc(200px + 1.5rem);
+    max-height: calc(200px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
@@ -41,8 +41,10 @@
 
 
 #imageBanner3{
-    max-width: calc(325px + 1.5rem);
-    max-height: calc(325px + 1.5rem);
+    min-width: calc(200px + 1.5rem);
+    min-height: calc(200px + 1.5rem);
+    max-width: calc(200px + 1.5rem);
+    max-height: calc(200px + 1.5rem);
     width: auto;
     height: auto;
     border-radius: 30px;
@@ -114,7 +116,7 @@
     content: "BUILD YOUR CAR";
     z-index: 1000;
     filter: brightness(3360%);
-    letter-spacing: 13px;
+    letter-spacing: 6px;
     white-space: nowrap;
     transition: all .5s ease-in-out;
 }
@@ -137,7 +139,7 @@
     content: "SPECIAL OFFERS";
     z-index: 1000;
     filter: brightness(3360%);
-    letter-spacing: 13px;
+    letter-spacing: 6px;
     white-space: nowrap;
     transition: all .5s ease-in-out;
 }
@@ -152,7 +154,7 @@
 
 .relativePicture3::before{
     color: #efefef00;
-    letter-spacing: 13px;
+    letter-spacing: 6px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -185,7 +187,6 @@
     display: flex;
     justify-content: center;
     height: 900px;
-    margin-top: 10rem;
 }
 
 .carText1{
@@ -205,7 +206,7 @@
     letter-spacing: 5px;
     animation: fallAnimation 1.1s forwards;
     position: absolute;
-   top: 0;
+    top: 0;
 }
 
 .toolsAnimation2{
@@ -249,7 +250,6 @@
 }
 
 .animationContainer{
-    height: calc(150px + 73px);
     width: 100%;
     display: flex;
     position: relative;
