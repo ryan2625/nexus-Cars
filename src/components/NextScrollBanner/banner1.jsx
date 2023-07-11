@@ -50,14 +50,20 @@ useEffect(() => {
                 </div>
             <div className="gridSystemBanner1">
                 <div className="relativePictures" ref={toolsPic}>
-                    <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3" : "opacity"}>
-                        <img src={imageTool1} alt="" id="imageBanner1"/> 
+                    <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3 animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR"}>
+                        <div className="picture1tooler">
+                            <img src={imageTool1} alt="" id="imageBanner1"/> 
+                        </div>
                     </div>
-                    <div className="relativePicture2 picturesHover">
-                        <img src={imageTool2} alt="" id="imageBanner2"/>
+                    <div className={toolPicVisible ? "relativePicture2 picturesHover toolsPic2 animator" : "relativePicture1 picturesHover toolsPic3 animator"}>
+                    <div className="picture1tooler picture1toolera">
+                        <img src={imageTool2} alt="" id="imageBanner2" className='animator'/>
+                        </div>
                     </div>
-                    <div className={toolPicVisible ? "relativePicture3 picturesHover toolsPic" : "opacity"}>
-                        <img src={imageTool3} alt="" id="imageBanner3" ref={toolsPic} />
+                    <div className={toolPicVisible ? "relativePicture3 picturesHover toolsPic animator" : "relativePicture1 picturesHover toolsPic3 animator"}>
+                    <div className="picture1tooler picture1toolerb">
+                        <img src={imageTool3} alt="" id="imageBanner3" className='animator'/>
+                        </div>
                     </div>
                 </div>
             </div>
