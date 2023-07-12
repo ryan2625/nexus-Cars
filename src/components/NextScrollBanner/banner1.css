@@ -49,33 +49,26 @@
 
 
 .gridSystemBanner{
-    margin-top: 10rem;
+    margin-top: 0rem;
 }
-
-.gridSystemBanner1{
-    display: flex;
-    justify-content: center;
-    height: 600px;
-}
-
 .relativePictures{
     display: flex;
-    min-width: calc(325px + 1.5rem);
-    min-height: calc(325px + 1.5rem);
-    max-width: calc(325px + 1.5rem);
-    max-height: calc(325px + 1.5rem);
+    min-width: calc(234px + 1.5rem);
+    min-height: calc(234px + 1.5rem);
+    max-width: calc(234px + 1.5rem);
+    max-height: calc(234px + 1.5rem);
     width: auto;
     height: auto;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 15rem;
 }
 
 
 
 .relativePicture1{
     position: absolute;
-    right: 230px;
-    bottom: 230px;
+    right: 130px;
+    bottom: 130px;
 }
 
 
@@ -90,12 +83,33 @@
 }
 
 .toolsPic3{
-    animation: fallAnimationTools2 2s ease-out forwards;
+    animation: fallAnimationTools2 1s ease-out forwards;
 }   
-
-.toolsPicR{
-    animation: fadingIn 2s ease-out forwards;
+.toolsPic{
+    animation: fallAnimationTools 1s ease-out forwards;
 }
+
+.toolsPic2{
+    animation: fadingIn 1s ease-out forwards;
+}
+.toolsPicR1{
+    animation: fadingOut 2s ease-out forwards;
+}
+
+.toolsPicR2{
+    transform: translate(106px, 106px);
+    animation: fadingOut 1s ease-out forwards;
+}
+
+.toolsPicR3{
+    transform: translate(215px, 215px);
+    animation: fadingOut 1s ease-out forwards;
+}
+
+.fading{
+    animation: fadingOut 1s ease-out forwards;
+}
+
 @keyframes fallAnimationTools2 {
     0% {
         opacity: 0;
@@ -108,13 +122,17 @@
     }
 }
 
-.toolsPic{
-    animation: fallAnimationTools 2s ease-out forwards;
+
+@keyframes fadingOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.toolsPic2{
-    animation: fadingIn 2s ease-out forwards;
-}
 
 @keyframes fadingIn {
     0% {
@@ -192,8 +210,9 @@
 
 .gridSystemBanner1{
     display: flex;
-    justify-content: center;
-    height: 800px;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
 }
 
 .carText1{
@@ -338,7 +357,7 @@
 }
 
 .picture1tooler:hover{
-    transform: scale(1.1) !important;
+    transform: scale(1.06) !important;
     transition: transform .5s ease-in-out, filter .5s ease-out,  box-shadow 0s ease-in-out;
     z-index: 9999;
     outline: 5px solid white;
