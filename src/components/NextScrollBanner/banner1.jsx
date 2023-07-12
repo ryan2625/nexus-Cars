@@ -40,9 +40,25 @@ useEffect(() => {
     <div className="Row rowBanner1">
         </div>
             <div className="gridSystemBanner">
-                <div className="">
-                    REVOLUTIONARY. 
-                </div>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="parrallax pPic2">
+                                Image
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="parrallax pPic3">
+                                Image
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="parrallax pPic4">
+                                Image
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             <div className="gridSystemBanner1">
             <div className="animationContainer" ref={shoppingTools}>
         <div  className={ toolsVisible ? "noneDisplay2 toolsAnimation" : "noneDisplay2 toolsAnimation2"}>
@@ -68,7 +84,7 @@ useEffect(() => {
                 </div>
             </div>
             </div>
-            <div className="parrallax">
+            <div className="parrallax pPic1">
                 
             </div>
             <div className="placeHolder">
