@@ -23,6 +23,9 @@ function Banner1() {
         rootMargin: '-175px 0px'
     });
     
+    const { ref: parrallaxText, inView: parrallaxVisible} = useInView({
+        rootMargin: '-375px 0px'
+    });
 
 
 {/*const myRef = useRef()
@@ -40,31 +43,32 @@ useEffect(() => {
     <div className="Row rowBanner1">
         </div>
             <div className="gridSystemBanner">
-                <Container>
-                    <Row>
+                            <div className="animationContainer" ref={shoppingTools}>
+        <div  className={ toolsVisible ? "noneDisplay2 toolsAnimation" : "noneDisplay2 toolsAnimation2"}>
+                SHOPPING TOOLS
+            </div>
+        </div>
+                <Container className='centerer'>
+                    
+                    <Row className='centerRow'>
                         <Col>
-                            <div className="parrallax pPic2">
+                            <div className="supportBanner" id="sup1">
                                 Image
                             </div>
                         </Col>
                         <Col>
-                            <div className="parrallax pPic3">
+                            <div className="supportBanner" id="sup2" >
                                 Image
                             </div>
                         </Col>
                         <Col>
-                            <div className="parrallax pPic4">
+                            <div className="supportBanner"  id="sup3">
                                 Image
                             </div>
                         </Col>
                     </Row>
                 </Container>
             <div className="gridSystemBanner1">
-            <div className="animationContainer" ref={shoppingTools}>
-        <div  className={ toolsVisible ? "noneDisplay2 toolsAnimation" : "noneDisplay2 toolsAnimation2"}>
-                SHOPPING TOOLS
-            </div>
-        </div>
                 <div className="relativePictures" ref={toolsPic}>
                     <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3 animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR1"}>
                         <div className="picture1tooler">
@@ -84,11 +88,17 @@ useEffect(() => {
                 </div>
             </div>
             </div>
-            <div className="parrallax pPic1">
-                
+
+            <div className="introP">
+                asd
+            </div>
+            <div className="pPic1">
+                <div className={parrallaxVisible ? "nonVis" : "vis" } ref={parrallaxText} >
+                    aADASDASD
+                </div>
             </div>
             <div className="placeHolder">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nemo doloribus, ullam ea voluptates neque, ducimus natus nisi ratione sequi, earum reiciendis obcaecati quos. Numquam ipsa velit provident accusamus aliquid.
+              
             </div>
             <div className="liner"></div>
   </div>
