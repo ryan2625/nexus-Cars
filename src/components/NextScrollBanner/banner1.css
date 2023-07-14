@@ -506,7 +506,7 @@
 }
 
 .pText2{
-    animation: text2 2s ease-in-out forwards;
+    animation: fallAnimation4 2.65s forwards;
     margin-bottom: 13rem;
 }
 
@@ -533,5 +533,24 @@
         opacity: 0;
         transform: translateX(-25%);
         letter-spacing: 10px;
+    }
+}
+
+@keyframes fallAnimation4{
+   0%{
+    opacity: 0;
+    transform: translateY(-30px);
+   }
+   
+    40%{
+        opacity: 0;
+        transform: translateY(-25px);
+
+    }
+
+    100%{
+       opacity: 1;
+        transform: translateY(0px);
+
     }
 }

@@ -1,4 +1,77 @@
 .scrollBanner1{
     background-color: #293338;
-    height: 500px;
+    height: 400px;
 }
+
+.secondContainer{
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.secondRow{
+    flex: 1;
+}
+
+.firstColumn{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.firstColumn > *{
+    margin: 1rem;
+    
+}
+
+.firstColumn h2{
+    white-space: nowrap;
+}
+
+#column1{
+    flex-basis: 33%; flex-shrink: 0;
+}
+
+#column2{
+    flex-basis: 33%; flex-shrink: 0;
+}
+
+#column3{
+    flex-basis: 33%;
+    flex-shrink: 0;
+}
+
+.firstColumn:hover .hoverIcon{
+    animation: shift-up 0.3s ease forwards;
+}
+
+.hoverIcon{
+    animation: shift-down 0.3s ease forwards;
+}
+
+@keyframes shift-up {
+    0% {
+        transform: translateY(0px);
+        scale: 2;
+    }
+    100% {
+        transform: translateY(-10px);
+        scale: 2.5;
+    }
+  }
+
+  @keyframes shift-down {
+    0% {
+        transform: translateY(-10px);
+        scale: 2.5;
+    }
+    100% {
+        transform: translateY(0px);
+        scale: 2;
+    }
+  }
