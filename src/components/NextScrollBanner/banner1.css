@@ -467,16 +467,49 @@
 }
 
 .nonVis{
-    opacity: 0;
+    opacity: 1;
     z-index: 9999;
-    position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    position: absolute;
 }
 
-.vis{
-    opacity: 1;
-    position: absolute;
+
+
+.pText1{
+    animation: text 1.3s ease-in-out forwards;
+}
+
+.pText1A{
+    animation: fallAnimation3 1s forwards;
+}
+
+.pText2{
+    animation: text2 2s ease-in-out forwards;
+}
+
+.pText2A{
+    animation: fallAnimation2 1s forwards;
+}
+
+.textParralax{
+    white-space: nowrap;
+    color: rgb(252, 252, 252);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+@keyframes fallAnimation3{
+    0%{
+        opacity: 1;
+        letter-spacing: 10px;
+        transform: translateX(0%);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(-25%);
+        letter-spacing: 10px;
+    }
 }

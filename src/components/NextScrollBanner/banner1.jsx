@@ -24,7 +24,7 @@ function Banner1() {
     });
     
     const { ref: parrallaxText, inView: parrallaxVisible} = useInView({
-        rootMargin: '-375px 0px'
+        rootMargin: '-175px 0px'
     });
 
 
@@ -93,10 +93,15 @@ useEffect(() => {
                 asd
             </div>
             <div className="pPic1">
-                <div className={parrallaxVisible ? "nonVis" : "vis" } ref={parrallaxText} >
-                    aADASDASD
-                </div>
             </div>
+            <div className="nonVis vis" ref={parrallaxText} >
+                <div className={parrallaxVisible ? "textParralax pText1" : "textParralax pText1 pText1A" }>
+                    THE 2023 500h ELECTRIC
+                    </div>
+                    <div  className={parrallaxVisible ? "textParralax pText2" : "textParralax pText2 pText2A"}>
+                     MSRP STARTING AT $59.000
+                    </div>
+                </div>   
             <div className="placeHolder">
               
             </div>
