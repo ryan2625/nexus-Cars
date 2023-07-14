@@ -6,7 +6,7 @@
 
 .container1{
     background: linear-gradient(180deg, rgba(239,239,239,1) 0%, rgba(148,148,148,1) 74%);
-    height: fit-content;
+    overflow: hidden;
 }
 
 *{
@@ -292,7 +292,6 @@
 
 
 .pPic1{
-    height: 600px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -473,6 +472,7 @@
     transform: translate(-50%, -50%);
     color: white;
     position: absolute;
+    
 }
 
 
@@ -481,12 +481,33 @@
     animation: text 1.3s ease-in-out forwards;
 }
 
+.pText1::after {
+    content: "";
+    height: 2px;
+    position: absolute;
+    bottom: 10px;
+    background: rgb(255, 255, 255);
+    left: 0px;
+    width: 0%;
+    animation: fallAnimation3 2s ease-in-out forwards;
+}
+
+@keyframes lineIdentifier{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 .pText1A{
     animation: fallAnimation3 1s forwards;
 }
 
 .pText2{
     animation: text2 2s ease-in-out forwards;
+    margin-bottom: 13rem;
 }
 
 .pText2A{
@@ -505,6 +526,7 @@
         opacity: 1;
         letter-spacing: 10px;
         transform: translateX(0%);
+        
     }
 
     100%{
