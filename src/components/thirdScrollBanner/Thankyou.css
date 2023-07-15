@@ -1,0 +1,114 @@
+.thankYouContainer{
+    margin-top: 15rem;
+    text-align: center;
+    height: 400px;
+    
+}
+
+
+
+.thankYou1{
+    text-align: center;
+    font-size: 40px;
+    animation: fadeInTexter 1.25s ease-in-out forwards;
+}
+
+.thankYou1a{
+    text-align: center;
+    font-size: 40px;
+    animation: fadeOutTexter 1s ease-in-out forwards;
+
+}
+
+.thankYouColored{
+  color: red;
+  animation: fadeInTexter2 1.75s ease-in-out forwards;
+  font-size: 40px;
+  
+}
+
+.thankYouColoreda{
+    animation: fadeOutTexter 1s ease-in-out forwards;
+}
+
+
+.thankYou3a{
+    animation: fadeOutTexter 1s ease-in-out forwards;
+}
+
+.thankYou3{
+    animation: fadeInTexter3 2.55s ease-in-out forwards;
+}
+
+@keyframes fadeInTexter {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+  @keyframes fadeInTexter2 {
+    0% {
+      opacity: 0; 
+      transform: translateY(-30px);
+    }
+    40% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+  @keyframes fadeInTexter3 {
+    0% {
+      opacity: 0; 
+    }
+
+    65%{
+        opacity: 0;
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+  @keyframes fadeOutTexter {
+    0% {
+      opacity: 1; 
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+
+  .thankYou2{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 25px;
+    animation: fadeInTexter4 3.65s ease-in-out forwards;
+}
+
+.thankYou2a{
+    animation: fadeOutTexter 1s ease-in-out forwards;
+}
+
+@keyframes fadeInTexter4 {
+    0% {
+      opacity: 0; 
+    }
+
+    60%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1; 
+      transform: translateY(0px);
+    }
+  }

@@ -24,7 +24,7 @@ function Banner1() {
     });
     
     const { ref: parrallaxText, inView: parrallaxVisible} = useInView({
-        rootMargin: '-150px 0px'
+        rootMargin: '-250px 0px'
     });
 
 
