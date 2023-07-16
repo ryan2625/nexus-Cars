@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #1a1a36
+}
+
+ul{
+    list-style-type: none;
+    color: white;
+}
+
+li{
+    margin: 1rem;
+}
+.links1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-basis: 33%;
+}
+
+.links1 > h1{
+    color: white;
+    margin-bottom: -2rem;
+    position: relative;
+}
+
+.shopper::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    border-bottom: 1px solid white;
+    
+}
+
+a{
+    text-decoration: none !important;
+    color: white !important;
+}

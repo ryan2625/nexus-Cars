@@ -6,6 +6,8 @@ import ZeroBanner from '../0thScrollBanner/ZeroBanner'
 import ZeroBannerA from '../0thScrollBanner/ZeroBannerA'
 import ScrollBanner1 from '../secondScrollBanner/SecondScroll'
 import Thankyou from '../thirdScrollBanner/Thankyou'
+import Footer from '../footer/Footer'
+
 function Home() {
   return (<div className='homePage'>
    <CarCaro />
@@ -15,6 +17,7 @@ function Home() {
    <Banner1 />
    <ScrollBanner1/>
    <Thankyou />
+   <Footer />
    </div>
   )
 }
