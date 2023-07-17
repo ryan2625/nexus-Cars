@@ -20,12 +20,20 @@ li{
     align-items: center;
     height: 100%;
     flex-basis: 33%;
+    
 }
 
-.links1 > h1{
+.align > h1{
     color: white;
     margin-bottom: -2rem;
     position: relative;
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
 }
 
 .shopper::before{
@@ -35,10 +43,19 @@ li{
     bottom: 0rem;
     left: 0;
     border-bottom: 1px solid white;
-    
+    color: white;
 }
 
 a{
     text-decoration: none !important;
     color: white !important;
+}
+
+ul{
+    margin-left: -3.1rem;
+}
+
+li:hover{
+    color: #ff4d4d;
+    cursor: pointer;
 }

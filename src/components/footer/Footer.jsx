@@ -6,6 +6,7 @@ function Footer() {
   return (
     <div className='footer'>
         <div className="links1">
+        <div className="align">
             <h1 className='shopper'>
                 SHOP
             </h1>
@@ -15,6 +16,7 @@ function Footer() {
                 <li><a href="">Get a Quote</a></li>
                 <li><a href="">Trade-in Value</a></li>
             </ul>
+            </div>
         </div>
 
         <div className="links1">
