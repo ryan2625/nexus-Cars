@@ -55,7 +55,37 @@ ul{
     margin-left: -3.1rem;
 }
 
-li:hover{
-    color: #ff4d4d;
-    cursor: pointer;
+.effecter{
+    position: relative;
+}
+
+.effecter::before{
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.effecter:hover::before{
+    width: 100%;
+}
+
+.socialIcon{
+    transform: scale(2);
+    margin: 2rem;
+    transition: all 0.5s ease-in-out !important;
+}
+
+.socialIcon:hover{
+    transform: scale(2.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
