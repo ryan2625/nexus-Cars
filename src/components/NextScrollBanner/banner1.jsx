@@ -48,26 +48,19 @@ useEffect(() => {
                 SHOPPING TOOLS
             </div>
         </div>
-                <Container className='centerer'>
-                    
-                    <Row className='centerRow'>
-                        <Col>
+            <div className="gridSystemBanner0">
                             <div className="supportBanner" id="sup1">
                                 Image
                             </div>
-                        </Col>
-                        <Col>
+
                             <div className="supportBanner" id="sup2" >
                                 Image
                             </div>
-                        </Col>
-                        <Col>
+
                             <div className="supportBanner"  id="sup3">
                                 Image
                             </div>
-                        </Col>
-                    </Row>
-                </Container>
+            </div>
             <div className="gridSystemBanner1">
                 <div className="relativePictures" ref={toolsPic}>
                     <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3 animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR1"}>

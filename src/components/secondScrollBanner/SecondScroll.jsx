@@ -29,7 +29,7 @@ function SecondScroll() {
             CHAT WITH A CONCIERGE
                 </h2>
                 <p>
-                Ask our highly trained professionals any questions you may have.
+                Ask our qualified and licensed professionals any questions you may have.
                 </p>
             </div>
             <div className="firstColumn" id='column3'>

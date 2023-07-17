@@ -75,3 +75,42 @@
         scale: 2;
     }
   }
+
+  @media (max-width: 1100px) {
+        .firstColumn > h2{
+            font-size: x-large;
+        }
+
+        .firstColumn{
+            font-size: small;
+        }
+
+  }
+
+  @media(max-width: 870px){
+    .secondContainer{
+        flex-direction: column;
+    }
+
+    #column1{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.589);
+        width: 50%;
+    }
+
+    #column2{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.589);
+        width: 50%;
+    }
+
+    .firstColumn > p{
+        display: none;
+    }
+
+    .hoverIcon{
+        transform: scale(.85) !important;
+    }
+
+    .scrollBanner1{
+        height: 455px;
+    }
+  }
