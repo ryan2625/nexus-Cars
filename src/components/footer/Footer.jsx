@@ -30,7 +30,7 @@ function Footer() {
                 <li><a href="" className='effecter'>Options</a></li>
                 <li><a href="" className='effecter'>Ownership</a></li>
                 <li><a href="" className='effecter'>Lorem Ipsum</a></li>
-                <li><a href="" className='effecter'>Lorem dolor Ipsum</a></li>
+                <li><a href="" className='effecter'>Lorem Dolor</a></li>
             </ul>
         </div>
         </div>

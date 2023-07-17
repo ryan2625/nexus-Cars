@@ -307,16 +307,6 @@
 }
 
 
-
-.pPic1{
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow-x: hidden;
-}
-
 .pPic1::before{
     content: "";
     height:800px;
@@ -328,7 +318,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    overflow-x: hidden;
 }
 
 .gridSystemBanner0{
@@ -485,7 +474,6 @@
     transform: translate(-50%, -50%);
     color: white;
     position: absolute;
-    overflow-x: hidden;
 }
 
 
@@ -504,6 +492,7 @@
     left: 0px;
     width: 0%;
     animation: fallAnimation3 2s ease-in-out forwards;
+
 }
 
 @keyframes lineIdentifier{
@@ -598,4 +587,91 @@
     .toolsPic3{
         animation: none;
     }
+}
+
+@media (max-width: 830px){
+    .supportBanner{
+        min-width: 200px;
+        height: 350px;
+        width: auto;
+        margin: .5rem;
+    }
+}
+
+@media (max-width: 670px){
+    .gridSystemBanner0{
+        flex-direction: column;
+    }
+    .supportBanner{
+        min-width: 300px;
+        height: 250px;
+        width: auto;
+        margin: .5rem;
+    }
+}
+
+@media (max-width: 455px){
+    .animationContainer{
+        margin-bottom: 7rem;
+    }
+}
+
+.textParralax{
+    overflow: hidden;
+}
+
+.pText2{
+    overflow: hidden;
+}
+
+@media (max-width:870px){
+    .pPic1::before{
+        content: "";
+        height:400px;
+        background-image: url("688304.jpg");
+        margin: auto;
+        display: block;
+        background-attachment: scroll;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .nonVis{
+        overflow: hidden;
+    }
+
+        
+        .pText1{
+            font-size: 1.25rem !important;
+        }
+
+        .pText2{
+            font-size: 1.1rem !important;
+        }
+}
+
+@media (max-width: 590px){
+    .pText1{
+        margin-top: 2rem;
+        animation: none;
+        letter-spacing: 2px;
+    }
+    .pText2{
+        animation: none;
+    }
+}
+
+@media (max-width: 600px){
+    .gridSystemBanner1{
+        display: none;
+    }
+
+    .gridSystemBanner0{
+        margin-bottom: 5rem;
+    }
+
+
 }

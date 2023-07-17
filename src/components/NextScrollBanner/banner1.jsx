@@ -50,15 +50,15 @@ useEffect(() => {
         </div>
             <div className="gridSystemBanner0">
                             <div className="supportBanner" id="sup1">
-                                Image
+                               
                             </div>
 
                             <div className="supportBanner" id="sup2" >
-                                Image
+                           
                             </div>
 
                             <div className="supportBanner"  id="sup3">
-                                Image
+                  
                             </div>
             </div>
             <div className="gridSystemBanner1">
@@ -81,6 +81,7 @@ useEffect(() => {
                 </div>
             </div>
             </div>
+            <div className="overflower">
             <div className="pPic1">
             </div>
             <div className="nonVis vis" ref={parrallaxText} >
@@ -91,6 +92,7 @@ useEffect(() => {
                         MSRP STARTING AT $59,000
                     </div>
                 </div>   
+                </div>
          
   </div>
   )
