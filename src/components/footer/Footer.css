@@ -89,3 +89,17 @@ ul{
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .socials{
+        flex-direction: column;
+    }
+
+    .socialIcon{
+        margin: 1rem;
+    }
+
+    .footer{
+        justify-content: space-around;
+    }
+}

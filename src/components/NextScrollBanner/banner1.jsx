@@ -81,10 +81,6 @@ useEffect(() => {
                 </div>
             </div>
             </div>
-
-            <div className="introP">
-                asd
-            </div>
             <div className="pPic1">
             </div>
             <div className="nonVis vis" ref={parrallaxText} >
