@@ -27,7 +27,9 @@
     color: white;
     letter-spacing: 10px;
     font-size:x-large;
-    top: 0px
+    top: 0px;
+    width: 100%;
+    left: 0% !important;
 }
 
 .carousel-caption > h3{
@@ -133,4 +135,27 @@
         animation: text2 3s 1;
     }
 
+  }
+
+
+  @media (max-width:520px) {
+    .carousel-caption > h3{
+        white-space: nowrap;
+        font-size: large;
+      }
+
+      .carousel-caption > p{
+        font-size: medium;
+      }
+  }
+
+  @media (max-width: 440px){
+    .carousel-caption > h3{
+        white-space: nowrap;
+        font-size: small;
+      }
+
+      .carousel-caption > p{
+        font-size: 11px;
+      }
   }

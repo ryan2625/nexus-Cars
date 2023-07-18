@@ -134,3 +134,8 @@
   font-size: 15px;
 }
   }
+
+
+  h3{
+    white-space: nowrap;
+  }
