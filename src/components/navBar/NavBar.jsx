@@ -45,7 +45,7 @@ function NavBar() {
     <Container className='navBar1'>
       <Navbar.Brand href="#home"><BoltIcon/><img src={logoCar} alt="" id="brandPicture"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse  className="adjust-Responsive-Nav" id="responsive-navbar-nav">
+        <Navbar.Collapse  className={`adjust-Responsive-Nav ${expanded ? 'expanded' : ''}`} id="responsive-navbar-nav">
       <Nav className="me-auto" id="nav-Adjust">
 
       <div className={isDisplayed ? "searcherShown" : "searcherNo"}>
