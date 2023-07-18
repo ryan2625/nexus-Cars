@@ -57,9 +57,24 @@ function NavBar() {
           </Form>
         </div>
           <SearchIcon id="searchIcon" onClick={handleClicker}/>
-          
-        <Nav.Link className="afterNav underLine" href="#home">Home</Nav.Link>
-        <Nav.Link className="afterNav underLine" href="#features">Features</Nav.Link>
+          <div className="dropping">
+         <NavDropdown
+              id="dropDownExmaple"
+              title="Home"
+              menuVariant="light"
+            >
+              <NavDropdown.Item href="#action/3.1">Trade-In</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Inventory
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Get a Quote</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Nexus Owners
+              </NavDropdown.Item>
+            </NavDropdown>
+            </div>
+        <Nav.Link className="afterNav underLine" href="#features" id="featuresss">Features</Nav.Link>
         <Nav.Link className="afterNav underLine" href="#pricing">Pricing</Nav.Link>
       </Nav>
       </Navbar.Collapse>

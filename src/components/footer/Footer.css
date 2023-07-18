@@ -48,7 +48,6 @@ li{
 
 a{
     text-decoration: none !important;
-    color: white !important;
 }
 
 ul{
@@ -58,6 +57,7 @@ ul{
 .effecter{
     position: relative;
     white-space: nowrap;
+    color: white !important;
 }
 
 .effecter::before{
@@ -78,6 +78,7 @@ ul{
     transform: scale(2);
     margin: 2rem;
     transition: all 0.5s ease-in-out !important;
+    color: white !important;
 }
 
 .socialIcon:hover{
