@@ -112,3 +112,38 @@
       transform: translateY(0px);
     }
   }
+
+  @media (max-width:400px){
+    .thankYouContainer{
+      margin-top: 15rem;
+      text-align: center;
+      height: 300px;
+  }
+
+  .thankYou1{
+    text-align: center;
+    font-size: 30px;
+    animation: fadeInTexter 1.25s ease-in-out forwards;
+}
+
+.thankYou1a{
+    text-align: center;
+    font-size: 30px;
+    animation: fadeOutTexter 1s ease-in-out forwards;
+
+}
+
+.thankYouColored{
+  color: red;
+  animation: fadeInTexter2 1.75s ease-in-out forwards;
+  font-size: 30px;
+  
+}
+
+.thankYou2{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 15px;
+  animation: fadeInTexter4 3.65s ease-in-out forwards;
+}
+  }

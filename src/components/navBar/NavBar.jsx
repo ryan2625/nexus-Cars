@@ -18,13 +18,10 @@ function NavBar() {
       }
     };
 
-    // Initial check
     handleResize();
 
-    // Event listener for resize
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -36,9 +33,15 @@ function NavBar() {
     setIsDisplayed(!isDisplayed)
   }
 
+  const [expanded, setExpanded] = useState(false);
+  
+  const toggleNavbar = () => {
+    setExpanded(!expanded);
+    console.log("FINASCUHYB")
+  };
 
   return (
-    <Navbar  collapseOnSelect expand="lg" bg="light" data-bs-theme="light">
+    <Navbar  collapseOnSelect expand="lg" bg="light" data-bs-theme="light" onToggle={toggleNavbar}>
     <Container className='navBar1'>
       <Navbar.Brand href="#home"><BoltIcon/><img src={logoCar} alt="" id="brandPicture"/></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

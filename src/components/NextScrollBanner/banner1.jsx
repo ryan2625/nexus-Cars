@@ -20,11 +20,11 @@ function Banner1() {
     });
 
     const { ref: toolsPic, inView: toolPicVisible} = useInView({
-        rootMargin: '-175px 0px'
+        rootMargin: '-195px 0px'
     });
     
     const { ref: parrallaxText, inView: parrallaxVisible} = useInView({
-        rootMargin: '-250px 0px'
+        rootMargin: '-170px 0px'
     });
 
 

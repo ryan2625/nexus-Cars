@@ -113,34 +113,32 @@
 @keyframes fallAnimationTools2 {
     0% {
         opacity: 0;
-        transform: translate(65px, 65px);
     }
 
-    50%{
+    20%{
         opacity: 0;
-        transform: translate(65px, 65px);
+        transform: translateX(-20%);
     }
 
     100% {
         opacity: 1;
-        transform: translate(0,0);
+        transform: translate(0%);
     }
 }
 
 @keyframes fallAnimationTools {
     0% {
         opacity: 0;
-        transform: translate(-65px, -65px);
     }
 
     50%{
         opacity: 0;
-        transform: translate(-65px, -65px);
+        transform: translateX(-20%);
     }
 
     100% {
         opacity: 1;
-        transform: translate(0,0);
+        transform: translateX(0%);
     }
 }
 
@@ -168,12 +166,15 @@
     0% {
         opacity: 0;
     }
-    50% {
+
+    35%{
         opacity: 0;
+        transform: translateX(-20%);
     }
 
     100% {
         opacity: 1;
+        transform: translateX(0%);
     }
 }
 
@@ -471,9 +472,10 @@
     opacity: 1;
     z-index: 9999;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -110%);
     color: white;
     position: absolute;
+
 }
 
 
@@ -510,7 +512,6 @@
 
 .pText2{
     animation: fallAnimation4 2.65s forwards;
-    margin-bottom: 13rem;
     font-size: 2.5rem !important;
 }
 

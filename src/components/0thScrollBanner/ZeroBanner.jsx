@@ -9,7 +9,7 @@ import { useInView } from 'react-intersection-observer';
 function ZeroBanner() {
 
     const { ref: currentOffers, inView: offersVisible} = useInView({
-        rootMargin: '-150px 0px'
+        rootMargin: '-185px 0px'
     });
 
   return (<>
