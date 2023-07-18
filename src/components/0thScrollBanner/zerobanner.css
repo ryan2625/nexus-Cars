@@ -82,9 +82,9 @@
 .offersAnimation > h2::after{
     content: "";
     position: absolute;
-    left: -5%;
+    left: 0;
     bottom: -2px;
-    width: calc(var(--h2-width) + 10%);
+    width: 100%;
     background-color: black;
     height:2px;
     animation: slideInFromLeftUnderline2 1s forwards;

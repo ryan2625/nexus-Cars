@@ -57,6 +57,7 @@ ul{
 
 .effecter{
     position: relative;
+    white-space: nowrap;
 }
 
 .effecter::before{
