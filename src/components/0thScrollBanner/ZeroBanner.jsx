@@ -13,10 +13,12 @@ function ZeroBanner() {
     });
 
   return (<>
-    <div className={offersVisible ? "noneDisplay  " + "offersAnimation" : "noneDisplay " + "offersAnimation2"} ref={currentOffers}>
+  <div className="offeringContainer" ref={currentOffers}>
+    <div className={offersVisible ? "noneDisplay  " + "offersAnimation" : "noneDisplay " + "offersAnimation2"}>
         <h2 className='secondary'>
             VEHICLES AND CURRENT OFFERS
             </h2>
+    </div>
     </div>
     
     </>

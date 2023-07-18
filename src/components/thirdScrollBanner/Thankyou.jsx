@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 function Thankyou() {
 
   const { ref: thankYou, inView: thanksVisible} = useInView({
-    rootMargin: '-300px 0px'
+    rootMargin: '-200px 0px'
 });
 
   return (
