@@ -82,30 +82,6 @@
     top: 130px;
 }
 
-.toolsPic3{
-    animation: fallAnimationTools2 2.2s ease-out forwards;
-}   
-.toolsPic{
-    animation: fallAnimationTools 2.2s ease-out forwards;
-}
-
-.toolsPic2{
-    animation: fadingIn 2.2s ease-out forwards;
-}
-.toolsPicR1{
-    animation: fadingOut 1.5s ease-out forwards;
-}
-
-.toolsPicR2{
-    transform: translate(155px, 155px);
-    animation: fadingOut 1s ease-out forwards;
-}
-
-.toolsPicR3{
-    transform: translate(285px, 285px);
-    animation: fadingOut 1s ease-out forwards;
-}
-
 .fading{
     animation: fadingOut 1s ease-out forwards;
 }

@@ -18,17 +18,13 @@ function Banner1() {
     const { ref: shoppingTools, inView: toolsVisible} = useInView({
         rootMargin: '-75px 0px'
     });
-
-    const { ref: toolsPic, inView: toolPicVisible} = useInView({
-        rootMargin: '-195px 0px'
-    });
     
     const { ref: parrallaxText, inView: parrallaxVisible} = useInView({
         rootMargin: '-170px 0px'
     });
 
 
-{/*const myRef = useRef()
+{/*const myRef = useRef() demo123$  demo_fitness@gmail.com
 const [myElementIsVisible, setMyElementIsVisible] = useState()
 console.log('myElementIsVisible', myElementIsVisible)
 useEffect(() => {
@@ -62,18 +58,18 @@ useEffect(() => {
                             </div>
             </div>
             <div className="gridSystemBanner1">
-                <div className="relativePictures" ref={toolsPic}>
-                    <div className={toolPicVisible ? "relativePicture1 picturesHover toolsPic3 animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR1"}>
+                <div className="relativePictures">
+                    <div className={"relativePicture1 picturesHover toolsPic3 animator"}>
                         <div className="picture1tooler">
                             <img src={imageTool1} alt="" id="imageBanner1"/> 
                         </div>
                     </div>
-                    <div className={toolPicVisible ? "relativePicture2 picturesHover toolsPic2 animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR2"}>
+                    <div className={"relativePicture2 picturesHover toolsPic2 animator"}>
                     <div className="picture1tooler picture1toolera">
                         <img src={imageTool2} alt="" id="imageBanner2" className='animator'/>
                         </div>
                     </div>
-                    <div className={toolPicVisible ? "relativePicture3 picturesHover toolsPic animator" : "relativePicture1 picturesHover toolsPic3 animator toolsPicR3"}>
+                    <div className={"relativePicture3 picturesHover toolsPic animator"}>
                     <div className="picture1tooler picture1toolerb">
                         <img src={imageTool3} alt="" id="imageBanner3" className='animator'/>
                         </div>
