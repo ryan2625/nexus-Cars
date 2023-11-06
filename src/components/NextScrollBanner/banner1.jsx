@@ -57,25 +57,6 @@ useEffect(() => {
                   
                             </div>
             </div>
-            <div className="gridSystemBanner1">
-                <div className="relativePictures">
-                    <div className={"relativePicture1 picturesHover toolsPic3 animator"}>
-                        <div className="picture1tooler">
-                            <img src={imageTool1} alt="" id="imageBanner1"/> 
-                        </div>
-                    </div>
-                    <div className={"relativePicture2 picturesHover toolsPic2 animator"}>
-                    <div className="picture1tooler picture1toolera">
-                        <img src={imageTool2} alt="" id="imageBanner2" className='animator'/>
-                        </div>
-                    </div>
-                    <div className={"relativePicture3 picturesHover toolsPic animator"}>
-                    <div className="picture1tooler picture1toolerb">
-                        <img src={imageTool3} alt="" id="imageBanner3" className='animator'/>
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
             <div className="overflower">
             <div className="pPic1">

@@ -197,7 +197,8 @@
 
 .gridSystemBanner{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .gridSystemBanner1{
@@ -299,6 +300,8 @@
 
 .gridSystemBanner0{
     display: flex;
+    margin: 5rem;
+    gap: 7rem;
 }
 
 .supportBanner{
@@ -563,6 +566,12 @@
 
     .toolsPic3{
         animation: none;
+    }
+}
+
+@media (max-width: 1110px){
+    .gridSystemBanner0{
+        gap: 0rem;
     }
 }
 
