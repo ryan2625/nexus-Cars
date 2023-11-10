@@ -4,7 +4,7 @@ import car1 from "./car1.png"
 import car2 from "./car2.png"
 import car2a from "./car2a.png"
 import car1a from "./car1a.png"
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useLayoutEffect } from 'react'
 import "./carCaro.css"
 
 export default function CarCaro() {
@@ -16,13 +16,19 @@ export default function CarCaro() {
 
   const [images, setImages] = useState([firstImage, secondImage])
 
-  useEffect(() => {
+  const [aspectRatio, setAspectRatio] = useState("desktopPic")
+
+  useLayoutEffect(() => {
     const logSize = () => {
       setWindowSize(window.innerWidth);
     }
 
+    setAspectRatio(windowSize > 768 ? "desktopPic" : "mobilePic")
+
     const firstImageOperator = windowSize > 768 ? car1a : car1;
     const secondImageOperator = windowSize > 768 ? car2 : car2a;
+
+
 
     setImages([firstImageOperator, secondImageOperator])
   
@@ -31,7 +37,7 @@ export default function CarCaro() {
   }, [window.innerWidth]);
 
     return (
-        <Carousel interval={5000} slide={5000}>
+        <Carousel interval={4000} slide={4000} className={aspectRatio}>
           <Carousel.Item>
             <img
               className="d-block w-100"

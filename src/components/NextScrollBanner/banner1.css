@@ -610,7 +610,10 @@
     overflow: hidden;
 }
 
-@media (max-width:870px){
+@media (max-width:1150px){
+    .nonVis{
+        overflow: hidden;
+    }
     .pPic1::before{
         content: "";
         height:400px;
@@ -618,17 +621,12 @@
         margin: auto;
         display: block;
         background-attachment: scroll;
-        background-position: 50% 0%;
+        background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         overflow-x: hidden;
     }
-
-    .nonVis{
-        overflow: hidden;
-    }
-
         
         .pText1{
             font-size: 1.25rem !important;

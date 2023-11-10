@@ -4,3 +4,7 @@
 *{
     font-family: 'Barlow', sans-serif;
 }
+
+html{
+    overflow-x: hidden;
+}

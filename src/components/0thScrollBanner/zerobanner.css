@@ -10,6 +10,12 @@
     justify-content: space-evenly;
 }
 
+.secondary{
+  text-decoration: underline;
+  margin: 3rem;
+  text-align: center;
+}
+
 .carPics{
     margin: .5rem;
     display: flex;
@@ -116,16 +122,6 @@
     }
   }
   
-
-.offersAnimation2{
-    animation: slideFromMiddleToRight 1s forwards;
-    animation-timing-function: ease-out;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
-}
-
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(-10%);
