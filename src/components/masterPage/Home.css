@@ -21,3 +21,9 @@
     height: 50px;
     z-index: 90;
 }
+
+@media (max-width: 800px) {
+    .liner{
+        margin: 5rem
+    }
+}

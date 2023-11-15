@@ -611,9 +611,6 @@
 }
 
 @media (max-width:1150px){
-    .nonVis{
-        overflow: hidden;
-    }
     .pPic1::before{
         content: "";
         height:400px;
